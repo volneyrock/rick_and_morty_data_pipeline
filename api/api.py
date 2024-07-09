@@ -1,7 +1,7 @@
 import random
 import time
-import httpx
 
+import httpx
 
 BASE_URL = "https://rickandmortyapi.com/api"
 
