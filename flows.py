@@ -7,7 +7,6 @@ from tasks.prefect_tasks import save_to_json
 
 @flow(
     name="Rick and Morty Flow",
-    log_prints=True,
     retry_delay_seconds=10,
     retries=8,
 )

@@ -1,5 +1,6 @@
 import json
 
+from prefect import get_run_logger
 from prefect import task
 from prefect.exceptions import FailedRun
 
@@ -46,4 +47,5 @@ def fetch_character_location(character: dict) -> dict:
 def save_to_json(data, filename):
     with open(filename, "w") as f:
         json.dump(data, f, indent=4)
-    print(f"Data saved to {filename}")
+    logger = get_run_logger()
+    logger.info(f"Data saved to {filename}")
