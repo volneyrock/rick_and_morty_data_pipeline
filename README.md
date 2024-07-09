@@ -16,7 +16,7 @@ O projeto é gerenciado com `poetry` para dependências e `pre-commit` para gara
 
 ```bash
 git clone git@github.com:volneyrock/rick_and_morty_data_pipeline.git
-cd rick-and-morty-flow
+cd rick_and_morty_data_pipeline
 ```
 
 ### Configurar o ambiente virtual
@@ -33,13 +33,6 @@ poetry install
 poetry shell
 ```
 
-### pre-commit
-Este projeto utiliza `pre-commit` para manter a qualidade do código. Certifique-se de instalar os hooks após clonar o repositório:
-
-```bash
-pre-commit install
-```
-
 ### Para executar o fluxo
 
 ```bash
@@ -48,10 +41,17 @@ python flows.py
 
 Após a execução, um arquivo `rick_and_morty.json` será gerado contendo os dados dos personagens e suas localizações.
 
-## Para executar os testes
+### Para executar os testes
 
 ```bash
 pytest
+```
+
+### pre-commit
+Este projeto utiliza `pre-commit` para manter a qualidade do código. Certifique-se de instalar os hooks após clonar o repositório:
+
+```bash
+pre-commit install
 ```
 
 ### Estrutura do projeto
